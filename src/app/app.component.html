@@ -1,0 +1,8 @@
+<div class="w-100">
+  <app-header (messagesToggled)="messagesStatus=$event" (favoritesToggled)="favoriteStatus=$event"></app-header>
+  <main>
+    <app-side-nav class="gray-border"></app-side-nav>
+    <app-content class="d-flex flex-wrap justify-content-end" [messageList]="messagesStatus"
+                 [favoriteList]="favoriteStatus"></app-content>
+  </main>
+</div>

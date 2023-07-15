@@ -1,0 +1,116 @@
+<div class="side-nav-content">
+  <ul
+    class="nav-list"
+    [ngClass]="{'nav-list-open': clickMenu}"
+    id="menu">
+    <img *ngIf="!clickMenu" style="position: fixed;left: 39px;top: 98px" (click)="sideNaveToggle()"
+         src="assets/icons/Frame%201000005067.svg">
+    <img *ngIf="clickMenu" style="position: fixed;left: 236px;top: 160px"
+         (click)="sideNaveToggle()"
+         src="assets/icons/Menu%20Icon%20(1).svg">
+
+    <!--    <button (click)="sideNaveToggle()">click</button>-->
+    <li class="nav-list-item d-flex align-items-center">
+      <img src="assets/icons/Category - All (1).svg">
+      <span *ngIf="clickMenu">Dashboard</span>
+      <img *ngIf="clickMenu" style="width: 5px;height: 10px" src="assets/icons/arrow-right.svg">
+    </li>
+    <li class="nav-list-item d-flex align-items-center">
+      <img src="assets/icons/Chart.svg">
+      <span *ngIf="clickMenu">Analytics</span>
+    </li>
+    <li class="nav-list-item d-flex align-items-center">
+      <img src="assets/icons/Product.svg">
+      <span *ngIf="clickMenu">Tables</span>
+    </li>
+    <li class="nav-list-item d-flex align-items-center">
+      <img src="assets/icons/Category - All (1).svg">
+      <span *ngIf="clickMenu">Dashboard</span>
+    </li>
+    <li class="nav-list-item d-flex align-items-center">
+      <img src="assets/icons/Category - All (1).svg">
+      <span *ngIf="clickMenu">Dashboard</span>
+    </li>
+    <li class="nav-list-item d-flex flex-wrap align-items-center " id="nav-item">
+      <a href="#submenu1" class="nav-link d-flex align-items-center flex-wrap" data-bs-toggle="collapse"
+         data-bs-target="#submenu1">
+        <img src="assets/icons/Profile.svg">
+        <span class="" *ngIf="clickMenu">Profile</span>
+        <img *ngIf="clickMenu" style="width: 5px;height: 10px" src="assets/icons/arrow-right.svg">
+      </a>
+      <div *ngIf="clickMenu" class="collapse collapse-horizontal px-2" id="submenu1">
+        <ul class="list-unstyled mx-2">
+          <li class="py-3">
+            <a href="#" class="nav-link d-flex flex-wrap justify-content-around align-items-center">
+              <span>Menu item</span>
+              <img class="col-6" src="assets/icons/arrow-right.svg">
+            </a>
+          </li>
+          <li class="py-3"
+          >
+            <a href="#" class="nav-link">
+              <span>Menu item</span></a>
+          </li>
+          <li class="py-3 d-flex flex-wrap"
+          >
+            <a href="#submenu2" class="nav-link d-flex flex-wrap justify-content-around align-items-center"
+               data-bs-toggle="collapse" data-bs-target="#submenu2">
+              <span class="col-6">Menu item </span>
+              <img class="col-6" src="assets/icons/arrow-right.svg">
+            </a>
+            <div *ngIf="clickMenu" class="collapse collapse-horizontal px-2" id="submenu2">
+              <ul class="list-unstyled mx-2">
+                <li class="py-3">
+                  <a href="#" class="nav-link">
+                    <span>Menu item</span></a>
+                </li>
+                <li class="py-3"
+                >
+                  <a href="#" class="nav-link">
+                    <span>Menu item</span></a>
+                </li>
+                <li class="py-3"
+                >
+                  <a href="#" class="nav-link text-nowrap">
+                    <span>Menu item </span></a>
+                </li>
+                <li class="py-3"
+                >
+                  <a href="#" class="nav-link text-nowrap">
+                    <span>Menu item </span></a>
+                </li
+                >
+              </ul>
+            </div>
+          </li>
+          <li class="py-3"
+          >
+            <a href="#" class="nav-link text-nowrap">
+              <span>Menu item </span></a>
+          </li
+          >
+          <li class="py-3">
+            <a href="#" class="nav-link text-nowrap">
+              <span>Menu item </span></a>
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <!--          <li class="nav-list-item d-flex align-items-center">-->
+    <!--<img src="assets/icons/Profile.svg">-->
+    <!--            <span *ngIf="clickMenu">Profile</span>-->
+    <!--          </li>-->
+    <li class="nav-list-item d-flex align-items-center">
+      <img src="assets/icons/Setting.svg">
+      <span *ngIf="clickMenu">Setting</span>
+    </li>
+    <li class="nav-list-item d-flex align-items-center">
+      <img src="assets/icons/Frame 1000005080.svg">
+      <span *ngIf="clickMenu">Recent</span>
+    </li>
+    <div *ngIf="clickMenu" style="bottom: 19px;left: 13px;position: fixed">
+      <img src="assets/icons/toggle.svg">
+    </div>
+  </ul>
+</div>
